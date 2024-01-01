@@ -1,12 +1,14 @@
-import Koa from 'koa';
+import {serve} from '@hono/node-server'
+import {Hono} from 'hono';
 
-const app = new Koa();
+const app = new Hono();
 
-app.use(ctx => {
-    ctx.body = 'Hello';
+app.get('/', (c) => {
+    return c.text('hello')
 });
 
-app.listen(3000, () => {
-    console.log('http://localhost:3000');
-});
+serve(app, (info) => {
+    console.log(`http://localhost:${info.port}`)
+})
+
 

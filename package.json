@@ -1,17 +1,13 @@
 {
   "scripts": {
-    "demo": "ts-node hello.ts"
+    "start": "ts-node hello.ts"
   },
   "devDependencies": {
-    "@types/koa": "latest",
-    "@types/koa-bodyparser": "latest",
-    "@types/koa-router": "latest",
     "ts-node": "latest",
     "typescript": "latest"
   },
   "dependencies": {
-    "koa": "latest",
-    "koa-bodyparser": "latest",
-    "koa-router": "latest"
+    "@hono/node-server": "latest",
+    "hono": "latest"
   }
 }

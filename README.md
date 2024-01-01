@@ -1,4 +1,4 @@
-TypeScript Koa Hello World Demo
+TypeScript Hono Hello World Demo
 =============================
 
 ```
